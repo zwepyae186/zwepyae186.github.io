@@ -14,6 +14,7 @@ h1{
 }
 
 /* attribute selector */
+
 a[title="google"]{
     color: blue;
 }
@@ -236,4 +237,82 @@ ul li:nth-child(4){
     grid-column-start: 2;
     grid-row-start: 2;
     grid-row-end: 4;
+}
+
+/* flex lesson */
+
+.flex{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    /* justify-content: center; */
+}
+
+.flex div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* positon relative */
+
+.parent_relative{
+    border: 1px solid red;
+    width: 1000px;
+    height: 500px;
+}
+
+.relative{
+    border: 1px solid green;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.parent_absolute{
+    border: 1px solid red;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+}
+
+.absolute{
+    border: 1px solid yellow;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+
+.fixed{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+/* online font */
+
+
+.online_font{
+  font-family: "Tiny5 Duo", sans-serif;
+  font-optical-sizing: auto;
+ 
+  
+}
+
+/* offline font */
+
+@font-face {
+    font-family: two;
+    src: url(../Rubik_Storm/RubikStorm-Regular.ttf);
+}
+
+.offline_font{
+    font-family: two;
 }
