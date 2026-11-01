@@ -1,0 +1,240 @@
+@font-face {
+    font-family: "Oswald";
+    src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Oswald";
+}
+
+/* start navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgb(0,0,0,.2);
+}
+
+.narbar_logo{
+    width: 160px;
+    height: 90px;
+}
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-left: 50px;
+}
+
+.nav_item{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.nav_item:hover{
+    display: inline-block;
+    color: #2d3892;
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.get_started{
+    background-color: #2d3892;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #2d3892;
+    font-weight: bold;
+
+}
+
+.get_started:hover{
+    background-color: #FFFFFF;
+    color: #2d3892;
+    border: 1px solid #2d3892;
+}
+/* End Navbar */
+
+/*start bunner */
+.bunner{
+    background-image: url(../images/banner2.png);
+    height: 70vh;
+    background-size: cover;
+}
+
+.bunner_text{
+    margin-left: 120px;
+    padding-top: 100px;
+}
+
+.bunner_text h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+
+.bunner_text h2{
+    font-size: 30px;
+    color: #9c7a1d;
+    margin-bottom: 20px;
+}
+
+.bunner_text p{
+    color: #FFFFFF;
+    width: 500px;
+    line-height: 30px;
+}
+
+.our_package{
+    display: inline-block;
+    background-color: #9c7a1d;
+    border: 1px solid #9c7a1d;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.our_package:hover{
+    background-color: transparent;
+    color: #9c7a1d;
+    border: 1px solid #9c7a1d;
+}
+/* End bunner  */
+
+/* start service */
+.services{
+    margin-top: 80px;
+    text-align: center;
+    /* margin-bottom: 400px; */
+}
+.service_hr{
+    width: 100px;
+    margin: auto;
+    height: 2px;
+    background-color: black;
+    margin-top: 6px;
+}
+
+.service_cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 40px 150px 0px;
+    gap: 30px;
+}
+.service_card{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+}
+.service_card h3{
+    margin-bottom: 10px;
+}
+
+.service_card p{
+    font-size: 16px;
+}
+
+.service_icon{
+    color: #2d3892;
+    margin-bottom: 10px;
+}
+/* end service */
+
+/* start destination */
+.destinations{
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+}
+.destination_hr{
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    margin-top: 6px;
+}
+.destination_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+.destination_card{
+  height: 200px;
+    border-radius: 5px;
+}
+.destination_card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.destination_title{
+    position: relative;
+    top: -90%;
+    left: 10%;
+    color: #9c7a1d;
+}
+.destination_card:hover .destination_title{
+    color: #FFFFFF;
+}
+.destination_card:hover img{
+    filter: brightness(50%);
+}
+/* end destination */
+.packages{
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 4000px;
+}
+.package_cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.package_card img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.package_card h3{
+    font-size: 16px;
+    padding: 10px;
+}
+.package_card p{
+    padding: 10px;
+}
+.package_price{
+    float: right;
+    color: #9c7a1d;
+}
+
+.package_card{
+    background-color: #f2f2f2;
+}
+
+.book_now{
+    /* display: inline-block; */
+    background-color: #2d3892;
+    border: 1px solid #2d3892;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 4px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    float: right;
+    margin-right: 10px;
+}
